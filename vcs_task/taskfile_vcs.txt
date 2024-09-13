@@ -1,1 +1,131 @@
+VCS Task
+
+
+Task Description:
+
+Establish a new directory, populate it with script files, initiate an empty repository on GitHub, convert the local directory into a Git repository, and link it to GitHub for pushing the code into the repository. Perform merge, rebase, stash commands in following github repo.
+
+-----------------------------------------------------------------------------------------------------
+Steps:
+ 
+#Establish a new directory, populate it with script files     (Output screenshot = remote 1 to remote 4)
+
+mkdir Learning
+cd learning
+git init
+touch sample_file1.txt
+vim sample_file1.txt
+git status
+git add sample_file1.txt
+
+git commit -m "This is for git commands"
+
+#initiate an empty repository on GitHub, convert the local directory into a Git repository, and link it to GitHub for pushing the code into the repository
+
+git remote add origin https://github.com/muthunatesa/Learning.git
+git branch -M main
+git push -u origin main
+
+git remote #To check if our Local repo is linked with Remote repo
+
+
+-------------------------------------------------------------------------------------
+#merge (Output screenshot = merge -1 to merge -4)
+
+git branch
+git branch new
+git checkout new
+git branch # TO check which branch we're working
+
+# Make some changes in the sample_file1.txt also create another file in the "new" branch and do staging and commit
+
+vim sample_file1.txt
+cat sample_file1.txt #Added the second line in the file
+touch sample_file2.txt # created file in the "new" branch
+git status #To check status of the git
+
+git add .
+git commit -m "For merge purpose"
+git branch
+git checkout main 
+ls -la #To check the files 
+
+git checkout new
+git merge new
+
+ls -la
+
+-------------------------------------------------------------------------------
+#rebase (Output screenshot =Rebase -1 to Rebase -7)
+
+#make multiple changes in the sample_file2.txt and do staging &commit
+vim sample_file2.txt
+git add sample_file2.txt
+git commit -m "Second file edited"
+git status 
+ls -la
+git branch #To check which currently working
+
+#create new branch and in that branch create new file and do staging and commit
+
+git branch another
+ls -la
+touch sample_file3.txt
+vim sample_file3.txt
+
+git add sample_file3.txt 
+git commit -m ""
+
+git branch 
+git log --oneline #To check the commit Id
+
+# Now move back to main branch and create another new file and do commit
+
+git checkout main
+touch sample_file4.txt
+git add sample_file4.txt
+git commit -m "For rebase purpose"
+ls -la 
+git log --oneline
+
+# move back to "another branch and check for files and logs
+
+git checkout another
+git branch
+ls -la
+
+git rebase main #rebase command
+
+#now check for files and logs
+
+ls -la
+git log --oneline
+
+
+------------------------------------------------------------------------------------------------------------
+# git stash    (Output screenshot =stash 1 to stash 5)
+
+
+#Make some changes to sample_file4.txt file in main branch and do staging
+vim sample_file4.txt
+cat sample_file4.txt
+git add sample_file4.txt
+git status
+
+# now do git stash to stashing the last edited line in the sample_file4.txt in the main branch
+git stash
+
+cat sample_file4.txt
+
+#now create another2 branch and do git stash pop on sample_file4.txt
+git branch another2
+git checkout another2
+git branch
+
+cat sample_file4.txt
+git stash list
+git stash pop
+cat sample_file4.txt # Check the file weather it's stashed or not
+
+------------------------------------------------------------------------------------------------------------------------------------
 
