@@ -8,7 +8,7 @@ Establish a new directory, populate it with script files, initiate an empty repo
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 Steps:
  
-#Establish a new directory, populate it with script files  >>>>> (Output screenshot = Screenshot-1-remote 1 to Screenshot-4-remote 4)
+#Establish a new directory, populate it with script files  >>>>> (Output screenshot = vcs_1_remote_1 to vcs_4_remote_4)
 
 mkdir Learning
 cd learning
@@ -30,7 +30,7 @@ git remote #To check if our Local repo is linked with Remote repo
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-#merge >>>>>>(Output screenshot = Screenshot-5-merge -1 to Screenshot-8-merge -4)
+#merge >>>>>>(Output screenshot = vcs_5_merge_1 to vcs_8_merge_4)
 
 git branch
 git branch new
@@ -56,7 +56,7 @@ git merge new
 ls -la
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-#rebase >>>>>> (Output screenshot =Screenshot-9-Rebase -1 to Screenshot-15-Rebase -7)
+#rebase >>>>>> (Output screenshot =vcs_9_rebase_1 to vcs_15_rebase_7)
 
 #make multiple changes in the sample_file2.txt and do staging &commit
 vim sample_file2.txt
@@ -103,7 +103,7 @@ git log --oneline
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-# git stash >>>>>>> (Output screenshot =Screenshot-16-stash 1 to Screenshot-20-stash 5)
+# git stash >>>>>>> (Output screenshot =vcs_16_stash_1 to vcs_20_stash_5)
 
 
 #Make some changes to sample_file4.txt file in main branch and do staging
