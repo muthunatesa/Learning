@@ -5,10 +5,10 @@ Task Description:
 
 Establish a new directory, populate it with script files, initiate an empty repository on GitHub, convert the local directory into a Git repository, and link it to GitHub for pushing the code into the repository. Perform merge, rebase, stash commands in following github repo.
 
------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 Steps:
  
-#Establish a new directory, populate it with script files     (Output screenshot = remote 1 to remote 4)
+#Establish a new directory, populate it with script files  >>>>> (Output screenshot = Screenshot-1-remote 1 to Screenshot-4-remote 4)
 
 mkdir Learning
 cd learning
@@ -29,8 +29,8 @@ git push -u origin main
 git remote #To check if our Local repo is linked with Remote repo
 
 
--------------------------------------------------------------------------------------
-#merge (Output screenshot = merge -1 to merge -4)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#merge >>>>>>(Output screenshot = Screenshot-5-merge -1 to Screenshot-8-merge -4)
 
 git branch
 git branch new
@@ -55,8 +55,8 @@ git merge new
 
 ls -la
 
--------------------------------------------------------------------------------
-#rebase (Output screenshot =Rebase -1 to Rebase -7)
+----------------------------------------------------------------------------------------------------------------------------------------------
+#rebase >>>>>> (Output screenshot =Screenshot-9-Rebase -1 to Screenshot-15-Rebase -7)
 
 #make multiple changes in the sample_file2.txt and do staging &commit
 vim sample_file2.txt
@@ -102,8 +102,8 @@ ls -la
 git log --oneline
 
 
-------------------------------------------------------------------------------------------------------------
-# git stash    (Output screenshot =stash 1 to stash 5)
+-----------------------------------------------------------------------------------------------------------------------------------------
+# git stash >>>>>>> (Output screenshot =Screenshot-16-stash 1 to Screenshot-20-stash 5)
 
 
 #Make some changes to sample_file4.txt file in main branch and do staging
@@ -127,5 +127,4 @@ git stash list
 git stash pop
 cat sample_file4.txt # Check the file weather it's stashed or not
 
-------------------------------------------------------------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
