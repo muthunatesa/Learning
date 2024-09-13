@@ -1,1 +1,3 @@
 This file is created for task related to Git bash coomands
+
+This is example of merge command from "new" branch
