@@ -1,3 +1,6 @@
 [submodule "vcs_task"]
 	path = vcs_task
 	url = https://github.com/muthunatesa/Learning.git
+[submodule "learning"]
+	path = learning
+	url = https://github.com/muthunatesa/learning.git
